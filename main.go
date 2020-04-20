@@ -10,15 +10,10 @@ import (
 	"strconv"
 )
 
-func main() {
-	r := setupRouter()
-	r.Run(":8080")
-}
+var log *logrus.Logger
 
-func setupRouter() *gin.Engine {
-	r := gin.Default()
-
-	log := &logrus.Logger{
+func init() {
+	log = &logrus.Logger{
 		Out:   os.Stderr,
 		Level: logrus.DebugLevel,
 		Formatter: &easy.Formatter{
@@ -26,6 +21,23 @@ func setupRouter() *gin.Engine {
 			LogFormat:       "%time% [%lvl%] - %msg%",
 		},
 	}
+
+}
+
+func main() {
+	r := setupRouter()
+	p, ok := os.LookupEnv("APP_PORT")
+	if !ok {
+		log.Fatalln("port not found\n")
+		os.Exit(3)
+	}
+
+	port := ":" + p
+	r.Run(port)
+}
+
+func setupRouter() *gin.Engine {
+	r := gin.Default()
 
 	// Ping test
 	r.GET("/ping", func(c *gin.Context) {
