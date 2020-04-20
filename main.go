@@ -26,7 +26,7 @@ func init() {
 
 func main() {
 	r := setupRouter()
-	p, ok := os.LookupEnv("APP_PORT")
+	p, ok := os.LookupEnv("PORT")
 	if !ok {
 		log.Fatalln("port not found\n")
 		os.Exit(3)
