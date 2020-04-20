@@ -1,7 +1,6 @@
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/elliotforbes/test-package v1.0.0 h1:5YuuDaum0tX2G5EOHzsFm4ZXrsn8K341jgMFcD711WQ=
 github.com/elliotforbes/test-package v1.0.0/go.mod h1:FYNdacMBLThsqEOQ5/aiClalhO71JB7kjWdzgNhpbNE=
 github.com/gin-contrib/sse v0.1.0 h1:Y/yl/+YNO8GZSjAhjMsSuLt29uWRFHdHYUb5lYOV9qE=
 github.com/gin-contrib/sse v0.1.0/go.mod h1:RHrZQHXnP2xjPF+u1gW/2HnVO7nvIa9PG3Gm+fLHvGI=
@@ -34,6 +33,10 @@ github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZb
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/shenlihartono/used-go-module v0.0.0-20200420123706-7622875a51a4 h1:VpINLN0fgyih1zVtRF3dgL/ho4b+rmcp1bYs3sAJYyg=
 github.com/shenlihartono/used-go-module v0.0.0-20200420123706-7622875a51a4/go.mod h1:HdUZc0H9XWRmOG3nYtaJ1ooEavxhNdKnZacToRT4YXE=
+github.com/shenlihartono/used-go-module v0.0.0-20200420131110-29a38faf4fa8 h1:9KaDfmHR03GMDRDM61RpUMM69Bz+X7pwwCTL0C3uTjw=
+github.com/shenlihartono/used-go-module v0.0.0-20200420131110-29a38faf4fa8/go.mod h1:HdUZc0H9XWRmOG3nYtaJ1ooEavxhNdKnZacToRT4YXE=
+github.com/shenlihartono/used-go-module v1.2.0 h1:42f/npTWnaJghn9k6Lmz6J60WswG8SEiZDV1nhHElqY=
+github.com/shenlihartono/used-go-module v1.2.0/go.mod h1:HdUZc0H9XWRmOG3nYtaJ1ooEavxhNdKnZacToRT4YXE=
 github.com/sirupsen/logrus v1.4.2/go.mod h1:tLMulIdttU9McNUspp0xgXVQah82FyeX6MwdIuYE2rE=
 github.com/sirupsen/logrus v1.5.0 h1:1N5EYkVAPEywqZRJd7cwnRtCb6xJx7NH3T3WUTF980Q=
 github.com/sirupsen/logrus v1.5.0/go.mod h1:+F7Ogzej0PZc/94MaYx/nvG9jOFMD2osvC3s+Squfpo=

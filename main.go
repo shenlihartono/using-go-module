@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/shenlihartono/used-go-module/math"
+	"github.com/shenlihartono/used-go-module"
 	"github.com/sirupsen/logrus"
 	easy "github.com/t-tomalak/logrus-easy-formatter"
 	"net/http"
@@ -41,6 +41,26 @@ func setupRouter() *gin.Engine {
 		f, _ := strconv.Atoi(first)
 		s, _ := strconv.Atoi(second)
 		res := math.Add(f, s)
+		c.String(http.StatusOK, "%d", res)
+	})
+
+	r.GET("/subtraction", func(c *gin.Context) {
+		first := c.Query("first")
+		second := c.Query("second")
+
+		f, _ := strconv.Atoi(first)
+		s, _ := strconv.Atoi(second)
+		res := math.Subtract(f, s)
+		c.String(http.StatusOK, "%d", res)
+	})
+
+	r.GET("/multiplication", func(c *gin.Context) {
+		first := c.Query("first")
+		second := c.Query("second")
+
+		f, _ := strconv.Atoi(first)
+		s, _ := strconv.Atoi(second)
+		res := math.Multiply(f, s)
 		c.String(http.StatusOK, "%d", res)
 	})
 
