@@ -21,3 +21,8 @@ import (
 It will download and extract all the dependencies if they're not already existed in the 'global cache' (that's what the guy on youtube said) the location of global cache is at $GOPATH/pkg/mod
   
 9. Run `go run main.go` to start the application
+
+Note:
+You can try to add another dependency e.q Google cloud function to experiment using go-module 
+
+https://cloud.google.com/functions/docs/writing/specifying-dependencies-go#using_go_modules

@@ -26,13 +26,13 @@ func init() {
 
 func main() {
 	r := setupRouter()
-	p, ok := os.LookupEnv("PORT")
-	if !ok {
-		log.Fatalln("port not found\n")
-		os.Exit(3)
-	}
+	//p, ok := os.LookupEnv("PORT")
+	//if !ok {
+	//	log.Fatalln("port not found")
+	//	os.Exit(3)
+	//}
 
-	port := ":" + p
+	port := ":8077"
 	r.Run(port)
 }
 
@@ -41,7 +41,7 @@ func setupRouter() *gin.Engine {
 
 	// Ping test
 	r.GET("/ping", func(c *gin.Context) {
-		log.Infoln("ping received\n")
+		log.Infoln("ping received")
 		c.String(http.StatusOK, "pong")
 	})
 
